@@ -1,5 +1,12 @@
 import { ArrowUpRight } from 'lucide-react'
 
+const navLinks = [
+  { label: 'Profil', href: '#profil' },
+  { label: 'Parcours', href: '#parcours' },
+  { label: 'Compétences', href: '#competences' },
+  { label: 'Contact', href: '#contact' },
+]
+
 function Navbar() {
   return (
     <header
@@ -18,18 +25,15 @@ function Navbar() {
         className="order-3 flex w-full gap-5 overflow-x-auto pb-1 text-sm text-[var(--color-text-muted)] [scrollbar-width:none] sm:order-none sm:w-auto sm:gap-7 sm:overflow-visible sm:pb-0 [&::-webkit-scrollbar]:hidden"
         aria-label="Navigation principale"
       >
-        <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#profil">
-          Profil
-        </a>
-        <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#parcours">
-          Parcours
-        </a>
-        <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#competences">
-          Compétence
-        </a>
-        <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#contact">
-          Contact
-        </a>
+        {navLinks.map((link) => (
+          <a
+            className="shrink-0 transition-colors hover:text-[var(--color-primary)]"
+            href={link.href}
+            key={link.href}
+          >
+            {link.label}
+          </a>
+        ))}
       </nav>
 
       <a
