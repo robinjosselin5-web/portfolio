@@ -25,7 +25,7 @@ function Navbar() {
           Parcours
         </a>
         <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#competences">
-          Compétences
+          Compétence
         </a>
         <a className="shrink-0 transition-colors hover:text-[var(--color-primary)]" href="#contact">
           Contact
