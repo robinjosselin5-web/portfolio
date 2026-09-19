@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Profile from './components/Profile'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Profile />
       </main>
     </>
   )
