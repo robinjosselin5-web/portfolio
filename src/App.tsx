@@ -1,5 +1,6 @@
 import './App.css'
 import Hero from './components/Hero'
+import Journey from './components/Journey'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
 import Skills from './components/Skills'
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Profile />
         <Skills />
+        <Journey />
       </main>
     </>
   )
